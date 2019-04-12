@@ -1,51 +1,50 @@
-## Preparation
-Dentro de la carpeta `task` you will find an Ansible Playbook to provision a new server
-This task was prepared to be executed using Virtualbox or Parallels
+## Preparación
+Dentro de la carpeta `tarea` encontrará un libro de jugadas de Ansible para aprovisionar un nuevo servidor
+Esta tarea fue preparada para ser ejecutada usando Virtualbox o Parallels.
 
-### Base server image
+### Imagen del servidor base
 - Debian 8
 
-### Services to be launched
+### Servicios a lanzar
 - nginx
 - PHP7.0
 - MySQL5.6
 
-### Setup
-1. cd devops-assignment/tasks 
+### Preparar
+1. cd devops-asignación / tareas
 2. `vagrant up --provision`
 
-Te execute or provision again, execute `vagrant provision`
-Access the instance via https(s) at `http://myplay.local`
+Para ejecutar o aprovisionar nuevamente, ejecute `vagrant provision`
+Acceda a la instancia a través de https (s) en `http: // myplay.local`
 
-## Tasks
-### Part 1: Ansible and Linux fundamentals
-01. There are one or more errors in the ansible playbook. It is necessary to correct the errors so that the playbook completely turns
-02. Create a role that blocks the machine's TCP ports to only allow ports 80, 443 and 22 from any source
-03. Configure nginx so that the http page redirects to the https page
-04. Nginx can not return in headers the version of Nginx. Configure the server so that this field is not filled in the response header
-Create a new role that creates users on the server. This role should create the users `dev1` and` dev2`, and users should not have a password, but should be public key authentication. Users' public keys can be found in the `pubkeys` directory
+## Tareas
+### Parte 1: Fundamentos de Linux y Ansible
+01. Hay uno o más errores en el libro de juego ansible. Es necesario corregir los errores para que el libro de jugadas gire completamente.
+02. Cree un rol que bloquee los puertos TCP de la máquina para permitir solo los puertos 80, 443 y 22 desde cualquier fuente
+03. Configure nginx para que la página http redirija a la página https
+04. Nginx no puede devolver en los encabezados la versión de Nginx. Configure el servidor para que este campo no se llene en el encabezado de respuesta
+Crear un nuevo rol que crea usuarios en el servidor. Este rol debe crear los usuarios `dev1` y` dev2`, y los usuarios no deben tener una contraseña, sino que deben ser una autenticación de clave pública. Las claves públicas de los usuarios se pueden encontrar en el directorio `pubkeys`
 
 
-### Part 2: Docker (optional)
-06. Create a directory called `docker`
-07. Migrate services running on the Virtual machine to run on Docker containers. Each Service must run in a different container
-08. Specify the process to start the docker environment created in the previous item
+### Parte 2: Docker (opcional)
+06. Crea un directorio llamado `docker`
+07. Migre los servicios que se ejecutan en la máquina virtual para ejecutar en los contenedores de Docker. Cada servicio debe ejecutarse en un contenedor diferente
+08. Especifique el proceso para iniciar el entorno de ventana acoplable creado en el elemento anterior
 
-### Part 3: Questions
+### Parte 3: Preguntas
 
-09. What is missing for this system can be considered as production? Which points should be reviewed?
+09. ¿Qué falta para este sistema puede ser considerado como producción? ¿Qué puntos deben revisarse?
 
-10. Suppose the web application is already running at a time and has begun to receive a lot of traffic. What techniques would you use to ensure site performance?
+10. Supongamos que la aplicación web ya se está ejecutando a la vez y ha comenzado a recibir una gran cantidad de tráfico. ¿Qué técnicas utilizarías para garantizar el rendimiento del sitio?
 
-11. What would you need to do if you wanted to configure more than one vhost on this nginx server?
+11. ¿Qué tendría que hacer si desea configurar más de un host virtual en este servidor nginx?
 
-12. Explain briefly: How would you do to promote the DEV environment code to production? How many environments do you think you need and what process would you do for promotion between environments?
+12. Explique brevemente: ¿Cómo haría para promocionar el código de entorno DEV a producción? ¿Cuántos entornos crees que necesitas y qué proceso harías para la promoción entre entornos?
 
-13. What is Auto Scaling? How to implement? Is it possible to have Auto Scaling with Containers?
+13. ¿Qué es el Auto Scaling? ¿Cómo implementar? ¿Es posible tener auto escalado con contenedores?
 
-14. What is CI? What is CD? What tools do you know?
+14. ¿Qué es CI? ¿Qué es el CD? ¿Qué herramientas conoces?
 
-15. Describe what would be the ideal in your opinion regarding monitoring the site that we have just uploaded. What should we monitor and what tools could be used?
+15. Describa cuál sería el ideal en su opinión con respecto al monitoreo del sitio que acabamos de subir. ¿Qué debemos monitorear y qué herramientas se pueden utilizar?
 
-16. Which Public Clouds have you worked with?
-
+16. ¿Con qué nubes públicas has trabajado?
