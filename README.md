@@ -1,13 +1,13 @@
-## Warning!
-You don't need to complete all the assigment. Do your best to make good quality progress. We will base our evaluation on what is complete.
+## ¡Advertencia!
+No necesitas completar toda la tarea. Haz tu mejor esfuerzo para hacer un progreso de buena calidad. Basaremos nuestra evaluación en lo que está completo.
 
 
-### Deadline and file format:
+### Fecha límite y formato de archivo:
 
-You have 7 seven days to submit your modified code. If you don't have enough time, please let us know as soon as possible. We intend to evalute your technical skills, so we understand that last minute situations won't let you finish on time. 
+Tienes 7 siete días para enviar tu código modificado. Si no tiene suficiente tiempo, háganoslo saber lo antes posible. Tenemos la intención de evaluar sus habilidades técnicas, por lo que entendemos que las situaciones de último minuto no le permitirán terminar a tiempo.
 
-Send by e-mail a copy of the repo using Git bundle (https://git-scm.com/docs/git-bundle), example: git bundle create eu.bundle --all
+Envíe por correo electrónico una copia del repositorio utilizando Git bundle (https://git-scm.com/docs/git-bundle), por ejemplo: git bundle create eu.bundle --all
 
 
-## Tasks
-- The task list to execute can be found in tarefas.md
+## Tareas
+- La lista de tareas a ejecutar se encuentra en tarefas.md.
